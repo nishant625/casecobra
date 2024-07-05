@@ -24,14 +24,14 @@ const Navbar = async () => {
             {user ? (
               <>
                 <Link
-                  href="/api/auth/logout"
+                  href="/"
                   className={buttonVariants({ size: "sm", variant: "ghost" })}
                 >
                   Sign Out
                 </Link>
                 {isAdmin ? (
                   <Link
-                    href="/api/auth/logout"
+                    href="/dashboard"
                     className={buttonVariants({ size: "sm", variant: "ghost" })}
                   >
                     Dashboard
